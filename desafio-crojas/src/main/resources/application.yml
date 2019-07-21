@@ -1,0 +1,22 @@
+# Properties personalizadas
+api:
+  periodo: http://127.0.0.1:8080/periodos/api
+info:
+  version: v1
+# Spring Boot configuration
+spring:
+  profiles:
+    active: development
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+# Server configuration
+server:
+  port: 8081
+  tomcat:
+    max-threads: 3
+  servlet:
+    session:
+      timeout: 30
+  error:
+    include-stacktrace: always
